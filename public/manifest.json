@@ -4,7 +4,7 @@
   "theme_color": "#010b13",
   "background_color": "#5eaeee",
   "display": "fullscreen",
-  "Scope": "/",
+  "Scope": "./",
   "start_url": "./index.js",
   "icons": [
     {

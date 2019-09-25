@@ -1,20 +1,20 @@
-// var CACHE_NAME = 'otimigas-app';
+var CACHE_NAME = 'otimigas-app';
 
-// var urlsToCache = [
-//     '/',
-//     '/index.html',
-//     '/manifest.js',
-// ];
+var urlsToCache = [
+    '/',
+    '/index.html',
+    '/manifest.js',
+];
 
-// self.addEventListener('install', function (event) {
-//     // Perform install steps
-//     event.waitUntil(
-//         caches.open(CACHE_NAME)
-//             .then(function (cache) {
-//                 return cache.addAll(urlsToCache);
-//             })
-//     );
-// });
+self.addEventListener('install', function (event) {
+    // Perform install steps
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(function (cache) {
+                return cache.addAll(urlsToCache);
+            })
+    );
+});
 
 // self.addEventListener('fetch', function (event) {
 //     event.respondWith(
